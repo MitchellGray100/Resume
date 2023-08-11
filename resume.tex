@@ -1,0 +1,294 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks = true,
+            linkcolor = red,
+            urlcolor  = Mahogany,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\hypersetup{pdfborder = 0 0 0}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Mitchell Gray} \\ \vspace{1pt}
+    \small
+    \href{mailto:youremail@gmail.com}{\faEnvelope\ meg346@cornell.edu} ~ 
+    \href{https://www.linkedin.com/in/mitchellegray/}{\faLinkedin\ MitchellEGray}  ~
+    \href{https://github.com/MitchellGray100}{\faGithub\ MitchellGray100}
+    \vspace{-8pt}
+\end{center}
+
+
+% -----------Summary-----------
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Cornell University, Ithaca, NY}{Aug 2020 -- May 2024}
+      {Bachelor's of Science, Computer Science }{Deans List: Fall 2022}
+      %leave a line after this
+
+      \small{Minor, Operations Research Information Engineering}{}
+
+      \textbf{Relevant Coursework}: Distributed Computing $\cdot$ Cloud 
+      Computing $\cdot$ Systems Programming $\cdot$ Systems Seminar $\cdot$
+      Info Networks $\cdot$ Databases $\cdot$ DB Seminar $\cdot$ Practicum in DB
+      $\cdot$ Operating Systems $\cdot$ Practicum in OS $\cdot$ Software Testing
+      $\cdot$ AI $\cdot$ Analysis of Algorithms $\cdot$ Computer System Organization
+      $\cdot$ Honors Object-Oriented Design and Data Structures $\cdot$ Functional
+      Programming $\cdot$ Discrete Structures $\cdot$ UNIX Tools \& Scripting
+      $\cdot$ Digital Logic and Computer Organization $\cdot$ 
+      Topics in Data Science $\cdot$ Optimization II $\cdot$ Optimization I 
+      $\cdot$ Tools for Operations, ML, and Data Science
+               
+
+  \resumeSubHeadingListEnd
+\vspace{-18pt}
+
+%-----------Technical Skilss-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.1in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java $\cdot$ C++ $\cdot$ Python $\cdot$ SQL $\cdot$ Bash $\cdot$ C} \\
+     \textbf{Software \& Tools}{: 
+     CosmosDB $\cdot$ Neo4j $\cdot$ NeoDash $\cdot$ 
+     Azure Functions $\cdot$ Azure $\cdot$ Google Cloud $\cdot$ AWS $\cdot$ Kafka $\cdot$
+     Git $\cdot$ Protobuf $\cdot$ CI/CD $\cdot$ Docker $\cdot$ Kubernetes
+     $\cdot$ Tableau $\cdot$ Qlik $\cdot$ pandas $\cdot$ NumPy
+     JavaFX $\cdot$ PyQT $\cdot$ 
+     Mockito $\cdot$ JUnit $\cdot$
+     Poetry $\cdot$ Maven $\cdot$ CMake}\\
+    }}
+ \end{itemize}
+ \vspace{-20pt}
+
+%-----------EXPERIENCE-----------
+\section{Relevant Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Gecko Robotics}
+      {May 2023 -- Aug 2023}
+      {Software Engineer Intern $|$ \emph{C++, Python, CMake, C, Google Cloud, CI/CD}}{Pittsburgh, PA}
+      \resumeItemListStart
+        \resumeItem {Worked on Robot Controls team $\cdot$ Revamped Robot \& Data Acquisition emulators $\cdot$ 
+        Implemented new communications protocol $\cdot$ Wrote code for an asynchronous distributed system $\cdot$ 
+        Client/Server TCP networking $\cdot$ Replaced Visual Studio build-system with CMake $\cdot$ Added emulator support
+        for calibratable data $\cdot$ Integrated Github Actions and Poetry}
+%Based on the number of point you want to add add the "\resumeItem" for each point you want to add.
+    \resumeItemListEnd
+      
+    \resumeSubheading
+      {CMU-Software Engineering Institute }{May 2022 -- May 2023}
+      {DevOps Engineer Intern  $|$ \emph{Python, Bash, Neo4j, Docker, Kubernetes, CI/CD}}{Pittsburgh, PA}
+      \resumeItemListStart
+        \resumeItem {NDA $\cdot$ Updated and created Gitlab CI pipelines $\cdot$ Developed Python and Bash scripts $\cdot$ Created
+        REST API data visualizations using Qlik $\cdot$ Used ArgoCD to deploy AWS EKS cluster $\cdot$ Improved               
+        efficiency of the company by using Python, Neo4j, NeoDash, and the PageRank algorithm to 
+        create useful metrics / long-term documentation $\cdot$ Wrote 30+ page whitepaper using LaTeX $\cdot$ 
+        Worked in an agile development environment
+} 
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Cornell University}{Aug 2022 -- Present}
+      {Teaching Assistant / Head Proctor $|$ \emph{Java, Python, SQL}}{Ithaca, NY}
+      \resumeItemListStart
+        \resumeItem {Fall 2023, Databases: Held office hours twice weekly $\cdot$ 
+        Answered online Q\&A posts $\cdot$ Proctored exams}
+        \resumeItem {Spring 2023, Object Oriented Programming: Nominated for Course 
+        Staff Excellence Award $\cdot$ Taught class sections $\cdot$ Helped students with
+        Java assignments and topics in Office Hours \& Consulting Hours $\cdot$ Led exam sessions
+        $\cdot$ Graded}
+        \resumeItem {Fall 2022, Intro Physics Lab: Helped students with Python/NumPy
+         data analysis labs and homeworks}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+% adjust vscape based on the space you want to leave between each section.
+
+%------------Research-----------
+\section{Research}
+  \vspace{-6pt}
+      \resumeSubHeadingListStart
+      \resumeProjectHeading
+      {\textbf{ADOPT: Adaptively Optimizing Attribute Orders} $|$
+      \emph{\href{https://github.com/jxiw/ADOPT}{Github}} $|$
+      \emph{\href{https://vldb.org/2023/?papers-demo}{VLDB}}}{Jan 2022 -- Present}
+      \resumeItemListStart
+              \resumeItem{Paper Accepted into VLDB 2023 $\cdot$ Created dynamic data 
+              visualizations for the ADOPT query engine using Java, D3.js, JavaFX, 
+              and GraphStream $\cdot$ Visualized the engine's reinforcement learning 
+              algorithm $\cdot$ Worked under Prof. Trummer}
+            \resumeItemListEnd
+      \resumeSubHeadingListEnd
+  \vspace{-16pt}
+% adjust vscape based on the space you want to leave between each section.
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-6pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Cornell Meetup} $|$ Cloud Computing $|$ \emph{Azure, CosmosDB, Python, WebDev $|$
+          \href{https://github.com/MitchellGray100/CornellMeetUp}{Github}
+          $|$ \href{https://cis.cornell.edu/about/outreach-events/boom-bits-our-minds/projects/boom-2023-projects}
+          {BOOM}}}{Aug 2022 -- Dec 2022}
+          \resumeItemListStart
+            \resumeItem{ 1 of 32 projects selected for BOOM 2023. My partner and I created a 
+            social media web app that allows users to create groups, chat with friends,
+            and see where their friends are when on campus. Accounts details were obfuscated and salted.}
+          \resumeItemListEnd
+          \vspace{-14pt}
+    \resumeProjectHeading
+          {\textbf{DBMS} $|$ DB Practicum $|$ \emph{Java, SQL, JUnit, Mockito, NIO $|$
+          \href{https://github.com/MitchellGray100/DBMS}{Github}}}{Aug 2022 -- Dec 2022}
+          \resumeItemListStart
+            \resumeItem{ My team and I created a Database Management System. The DBMS   
+            took SQL queries as input and created a logical and physical operator plan. The queries were   
+            optimized using indexes, statistics, and V-values to choose the best operators. 
+            Queries could be calculated in-memory or externally. Indexes were 
+            serialized and deserialized to/from disk.
+}
+          \resumeItemListEnd
+          \vspace{-14pt}
+    \resumeProjectHeading
+          {\textbf{Egos} $|$ OS Practicum $|$ \emph{C $|$
+          \href{https://github.com/MitchellGray100/Egos}{Github}}}{Jan 2022 -- May 2022}
+          \resumeItemListStart
+            \resumeItem{ My team and I heavily upgraded an operating system. We made a threading and
+            semaphore package, multi level feedback queue to schedule processes, a file write-through and 
+            write-back cache using the Clock eviction algorithm, and also implemented the FAT file system.
+}
+          \resumeItemListEnd
+          \vspace{-14pt}
+    \resumeSubHeadingListEnd
+\vspace{-3pt}
+
+%------------Organizations-----------
+\section{Organizations}
+    \vspace{-6pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Engineering Entertainment Design Club} $|$ \emph{Lead Programmer / Secretary  $|$
+          \href{https://www.linkedin.com/company/cornell-entertainment-engineering-and-design-club/}{Club}}}{Aug 2022 -- Present}
+          \resumeItemListStart
+            \resumeItem{ Created a robot that makes drinks $\cdot$ Wrote Arduino 
+            code $\cdot$ Administrative tasks $\cdot$ Filming/Editing for club Youtube}
+          \resumeItemListEnd
+          \vspace{-14pt}
+    \resumeProjectHeading
+          {\textbf{Cornell Tradition Fellowship} $|$ \emph{Fellow $|$
+          \href{https://scl.cornell.edu/get-involved/cornell-commitment/cornell-tradition}{Fellowship}
+          }}{Aug 2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{Contains $<$ 4\% of all students $\cdot$ Keep good grades
+             $\cdot$ Work and volunteer during the school year $\cdot$ Do 100+ hours of each}
+          \resumeItemListEnd
+          \vspace{-14pt}
+    \resumeSubHeadingListEnd
+\vspace{-3pt}
+
+\end{document}
