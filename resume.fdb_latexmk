@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1692294764 "c:/Users/mitchell.gray/Documents/Resume/resume.tex" "resume.pdf" "resume" 1692294765 0
+["pdflatex"] 1692382766 "c:/Users/mitchell.gray/Documents/Resume/resume.tex" "resume.pdf" "resume" 1692382767 0
   "C:/Users/mitchell.gray/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1692293826 82039 32c00b46ec68f3ddea0147d75839907f ""
   "C:/Users/mitchell.gray/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1692293755 24122688 49b316b26be98d7005d444f9b2e512bc ""
   "C:/Users/mitchell.gray/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1651500229 2920 d63721872b8c77041b88e51b8f7c291d ""
@@ -102,10 +102,9 @@
   "C:/Users/mitchell.gray/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty" 1686255640 7147 d80d8cf72d313443d08c13c1af59c90f ""
   "C:/Users/mitchell.gray/AppData/Local/Programs/MiKTeX/tex/latex/tools/verbatim.sty" 1686255640 7392 ed69c044ab18d5539723c1c7b8c2ee88 ""
   "C:/Users/mitchell.gray/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/mitchell.gray/Documents/Resume/resume.tex" 1692294764 11863 d6fb2390afbfbf9a5fe2b56c7781dc10 ""
-  "resume.aux" 1692294765 1294 aa4097d96822f54825a630f1fcda6d11 "pdflatex"
-  "resume.out" 1692294765 657 28698dc62199b90eef7e37d8d1e7a051 "pdflatex"
-  "resume.tex" 1692294764 11863 d6fb2390afbfbf9a5fe2b56c7781dc10 ""
+  "c:/Users/mitchell.gray/Documents/Resume/resume.tex" 1692382765 11863 b7a3b65e4767dad58972ab8cdf234436 ""
+  "resume.aux" 1692382767 1294 aa4097d96822f54825a630f1fcda6d11 "pdflatex"
+  "resume.out" 1692382767 657 28698dc62199b90eef7e37d8d1e7a051 "pdflatex"
   (generated)
   "resume.aux"
   "resume.log"
