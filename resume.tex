@@ -83,6 +83,15 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeSpecialSubheading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -125,12 +134,11 @@
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
+    \resumeSpecialSubheading
       {Cornell University, Ithaca, NY}{Aug 2020 -- May 2024}
-      {Bachelor's of Science, Computer Science}{Deans List: Fall 2022}
+      {Bachelor's of Science, Computer Science}{21 Graduate Credits}
+      {Minor, Operations Research Information Engineering}{Deans List: Fall 2022}
       %leave a line after this
-
-      \small{\emph{Minor, Operations Research Information Engineering}}{}
 
       \textbf{Relevant Coursework}: Distributed Computing $\cdot$ Cloud 
       Computing $\cdot$ Systems Programming $\cdot$ Info Networks $\cdot$ Databases 
@@ -212,10 +220,11 @@
       \emph{\href{https://github.com/jxiw/ADOPT}{Github}} $|$
       \emph{\href{https://vldb.org/2023/?papers-demo}{VLDB}}}{Jan 2022 -- Present}
       \resumeItemListStart
-              \resumeItem{Paper accepted into VLDB 2023 $\cdot$ Created dynamic data 
-              visualizations for the ADOPT query engine using \textbf{Java}, D3.js, JavaFX, 
-              and GraphStream $\cdot$ Visualized the engine's reinforcement learning 
-              algorithm $\cdot$ Worked under Prof. Trummer}
+              \resumeItem{Paper accepted and presented at \textbf{VLDB 2023} $\cdot$ Currently working
+              on transforming the query engine into a \textbf{distributed query engine} $\cdot$ Created dynamic data 
+              visualizations for the ADOPT query engine using \textbf{Java}, JavaFX, and GraphStream $\cdot$ Visualized
+              the engine's reinforcement learning and worst-case optimal join
+              algorithms}
             \resumeItemListEnd
       \resumeSubHeadingListEnd
   \vspace{-16pt}
@@ -226,11 +235,22 @@
     \vspace{-6pt}
     \resumeSubHeadingListStart
     \resumeProjectHeading
+          {\textbf{Distributed Testing Platform (SPEED)} $|$ Masters Project $|$ \textbf{\emph{Java, JUnit, Cloud}\emph{ $|$
+          \href{https://github.com/MitchellGray100/SPEED}{Github}}}}{Aug 2023 -- May 2024}
+          \resumeItemListStart
+            \resumeItem{ My team and I created a \underline{S}calable \underline{P}latform for \underline{E}fficient \underline{E}xecution of
+            \underline{D}istributed testing. The fault-tolerant system contains a controller node that orchestrates worker nodes that 
+            run \textbf{JUnit} tests on \textbf{Java} code. The worker nodes report their findings to the controller. Once all tests are ran, test results are
+            shown in the frontend to the user.
+            }
+          \resumeItemListEnd
+          \vspace{-14pt}
+    \resumeProjectHeading
           {\textbf{DS-Labs Sharded Key Value Store} $|$ Distributed Computing $|$ \textbf{\emph{Java, Paxos, 2PC}}\emph{ $|$
           \href{https://github.com/emichael/dslabs}{Github}}}{Jan 2023 -- May 2023}
           \resumeItemListStart
             \resumeItem{ Using the DS-Lab framework, my partner and I were able to create a sharded transactional key-value 
-            store that uses Paxos for replication and 2PC for multi-key updates. We implemented
+            store that uses \textbf{Paxos} for replication and \textbf{2PC} for multi-key updates. We implemented
             an Exactly-once RPC protocol on top of an asynchronous network, a primary-backup protocol, 
             Paxos implemented with the PMMC protocol, and 2PC.}
           \resumeItemListEnd
@@ -244,18 +264,6 @@
             \resumeItem{ 1 of 32 projects selected for BOOM 2023. My partner and I created a 
             social media web app that allows users to create groups, chat with friends,
             and see where their friends are when on campus. Accounts details were obfuscated and salted.}
-          \resumeItemListEnd
-          \vspace{-14pt}
-    \resumeProjectHeading
-          {\textbf{DBMS} $|$ DB Practicum $|$ \textbf{\emph{Java, SQL, JUnit, Mockito, NIO}\emph{ $|$
-          \href{https://github.com/MitchellGray100/DBMS}{Github}}}}{Aug 2022 -- Dec 2022}
-          \resumeItemListStart
-            \resumeItem{ My team and I created a Database Management System. The DBMS   
-            took \textbf{SQL} queries as input and created a logical and physical operator plan. The queries were   
-            optimized using indexes, statistics, and V-values to choose the best operators. 
-            Queries could be calculated in-memory or externally. Indexes were 
-            serialized and deserialized to/from disk.
-            }
           \resumeItemListEnd
           \vspace{-14pt}
     \resumeSubHeadingListEnd
