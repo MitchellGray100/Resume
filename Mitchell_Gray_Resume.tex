@@ -83,12 +83,19 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSpecialSubheading}[6]{
+\newcommand{\resumeSpecialSubheadingCornell}[6]{
   \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textbf{\small #2} \\
       \textit{\small#3} & \textit{\small #4} \\
       \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSpecialSubheadingGT}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -116,6 +123,7 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+\definecolor{customred}{RGB}{147, 31, 31}
 
 
 \begin{document}
@@ -132,41 +140,44 @@
 
 % -----------Summary-----------
 %-----------EDUCATION-----------
-\section{Education}
+\section{\textcolor{customred}{Education}}
   \resumeSubHeadingListStart
-    \resumeSpecialSubheading
+    \resumeSpecialSubheadingGT
+      {Georgia Tech, Atlanta, GA}{Jan 2025 -- Aug 2026}
+      {Master's of Science, Computer Science}{Part-Time}%Insert GPA here%
+      %leave 2 lines after this
+
+
+    \resumeSpecialSubheadingCornell
       {Cornell University, Ithaca, NY}{Aug 2020 -- May 2024}
       {Bachelor's of Science, Computer Science}{30 Graduate Credits}%Insert GPA here%
       {Minor, Operations Research Information Engineering}{Deans List: FA 2022, FA 2023, SP 2024}
       %leave a line after this
 
+      \vspace{2pt}
       \textbf{Relevant Coursework}: Applied High-Performance and Parallel Computing $\cdot$ Distributed Computing $\cdot$ Cloud 
       Computing $\cdot$ Systems Programming $\cdot$ Info Networks $\cdot$ Databases 
       $\cdot$ Operating Systems $\cdot$ Software Testing $\cdot$ AI 
-               
-
-  \resumeSubHeadingListEnd
+      
+    \resumeSubHeadingListEnd
 \vspace{-18pt}
 
 %-----------Technical Skilss-----------
-\section{Technical Skills}
+\section{\textcolor{customred}{Technical Skills}}
  \begin{itemize}[leftmargin=0.1in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java $\cdot$ C++ $\cdot$ Python $\cdot$ SQL $\cdot$ Bash $\cdot$ C} \\
+     \textbf{Languages}{: Java $\cdot$ C++ $\cdot$ Python $\cdot$ SQL $\cdot$ Bash $\cdot$ C $\cdot$ Rust} \\
      \textbf{Software \& Tools}{: 
-     CosmosDB $\cdot$ Neo4j $\cdot$ 
-     Azure Functions $\cdot$ Azure $\cdot$ Google Cloud $\cdot$ AWS $\cdot$ Kafka $\cdot$
-     Git $\cdot$ Protobuf $\cdot$ CI/CD $\cdot$ Docker $\cdot$ Kubernetes
-     $\cdot$ Tableau $\cdot$ Qlik $\cdot$ pandas $\cdot$ NumPy $\cdot$
-     JavaFX $\cdot$ PyQT $\cdot$ 
-     Mockito $\cdot$ JUnit $\cdot$
-     Poetry $\cdot$ Maven $\cdot$ CMake}\\
+     Cloud Platforms $\cdot$ Microservices $\cdot$ REST $\cdot$ Databases $\cdot$ Containerization $\cdot$ Container Orchestration $\cdot$ CI/CD $\cdot$ 
+     Source Control $\cdot$ Dependency Managers $\cdot$
+     Build Systems $\cdot$ Unit Testing $\cdot$ 
+     Python Data Analytics $\cdot$ BI}\\
     }}
  \end{itemize}
  \vspace{-20pt}
 
 %-----------EXPERIENCE-----------
-\section{Relevant Work Experience}
+\section{\textcolor{customred}{Relevant Work Experience}}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Oracle}{June 2024 -- Present}
@@ -191,62 +202,58 @@
     
     \resumeSubheading
       {CMU-Software Engineering Institute }{May 2022 -- May 2023}
-      {DevOps Engineer Intern  $|$ \textbf{\emph{Python, Bash, Neo4j, Docker, Kubernetes, CI/CD}}}{Pittsburgh, PA}
+      {DevOps Engineer Intern  $|$ \textbf{\emph{Python, Rust, Bash, Neo4j, Docker, Kubernetes, CI/CD}}}{Pittsburgh, PA}
       \resumeItemListStart
-      \resumeItem {NDA $\cdot$ Updated and created \textbf{Gitlab CI} pipelines $\cdot$ Developed \textbf{Python} 
-        and \textbf{Bash} scripts $\cdot$ Created
-        \textbf{REST API} data visualizations using \textbf{Qlik} $\cdot$ Used \textbf{ArgoCD} to deploy \textbf{AWS EKS} cluster $\cdot$ Improved               
+      \resumeItem {Updated and created \textbf{Gitlab CI} pipelines $\cdot$ Developed \textbf{Python}, \textbf{Rust},
+        and \textbf{Bash} code $\cdot$ Created
+        \textbf{REST API} data visualizations $\cdot$ Used \textbf{ArgoCD} to deploy \textbf{AWS EKS} cluster $\cdot$ Improved               
         efficiency of the company by using \textbf{Python}, \textbf{Neo4j}, \textbf{NeoDash}, and the PageRank algorithm to 
-        create useful metrics / long-term documentation $\cdot$ Wrote 30+ page whitepaper using LaTeX $\cdot$ 
-        Worked in an agile development environment.}
+        create metrics / long-term documentation.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 \vspace{-16pt}
 % adjust vscape based on the space you want to leave between each section.
 
 %------------Research-----------
-\section{Research}
+\section{\textcolor{customred}{Research}}
   \vspace{-6pt}
       \resumeSubHeadingListStart
       \resumeProjectHeading
       {\textbf{ADOPT: Adaptively Optimizing Attribute Orders} $|$
       \textbf{\emph{Java, AWS}} $|$
       \emph{\href{https://github.com/jxiw/ADOPT}{Github}} $|$
-      \emph{\href{https://vldb.org/2023/?papers-demo}{VLDB}}}{Jan 2022 -- Present}
+      \emph{\href{https://vldb.org/2023/?papers-demo}{VLDB}}}{Jan 2022 -- May 2024}
       \resumeItemListStart
-              \resumeItem{Paper accepted and presented at \textbf{VLDB 2023} $\cdot$ Currently working
+              \resumeItem{Paper accepted and presented at \textbf{VLDB 2023} $\cdot$ Worked
               on transforming the query engine into a \textbf{distributed query engine} $\cdot$ Created dynamic data 
-              visualizations for the ADOPT query engine using \textbf{Java}, JavaFX, and GraphStream $\cdot$ Visualized
-              the engine's reinforcement learning and worst-case optimal join
-              algorithms.}
+              visualizations for the ADOPT query engine using \textbf{Java}, JavaFX, and GraphStream.}
             \resumeItemListEnd
       \resumeSubHeadingListEnd
   \vspace{-16pt}
 % adjust vscape based on the space you want to leave between each section.
 
 %-----------PROJECTS-----------
-\section{Projects}
+\section{\textcolor{customred}{Projects}}
     \vspace{-6pt}
     \resumeSubHeadingListStart
     \resumeProjectHeading
-          {\textbf{Distributed Testing Platform (SPEED)} $|$ Masters Project $|$ \textbf{\emph{Java, JUnit, Cloud}\emph{ $|$
-          \href{https://github.com/MitchellGray100/SPEED}{Github}}}}{Aug 2023 -- May 2024}
+          {\textbf{Distributed Unit Testing (SPEED)} $|$ Masters Project $|$ \textbf{\emph{Java, Cloud}}\emph{ $|$
+          \href{https://github.com/MitchellGray100/SPEED}{Github} $|$ \href{https://cis.cornell.edu/about/outreach-events/boom-bits-our-minds/projects/boom-2024-projects}{BOOM}}}{Aug 2023 -- May 2024}
           \resumeItemListStart
-            \resumeItem{My team and I created a \underline{S}calable \underline{P}latform for \underline{E}fficient \underline{E}xecution of
-            \underline{D}istributed testing. The fault-tolerant system contains a controller node that orchestrates worker nodes that 
-            run \textbf{JUnit} tests on \textbf{Java} code. The worker nodes report their findings to the controller. Once all tests are ran, test results are
-            shown in the frontend to the user.
+            \resumeItem{1 of 44 projects selected for BOOM 2024. My team and I created a \underline{S}calable \underline{P}latform for \underline{E}fficient \underline{E}xecution of
+            \underline{D}istributed testing. The fault-tolerant system contains a leader node that orchestrates worker nodes that 
+            run \textbf{JUnit} tests on \textbf{Java} code. The worker nodes send test results to the controller. Test results are
+            shown in the frontend.
             }
           \resumeItemListEnd
           \vspace{-14pt}
     \resumeProjectHeading
-          {\textbf{DS-Labs Sharded Key Value Store} $|$ Distributed Computing $|$ \textbf{\emph{Java, Paxos, 2PC}}\emph{ $|$
+          {\textbf{Sharded Key Value Store (KVS)} $|$ Distributed Computing $|$ \textbf{\emph{Java, Paxos, 2PC}}\emph{ $|$
           \href{https://github.com/emichael/dslabs}{Github}}}{Jan 2023 -- May 2023}
           \resumeItemListStart
-            \resumeItem{Using the DS-Lab framework, my partner and I were able to create a sharded transactional key-value 
-            store that uses \textbf{Paxos} for replication and \textbf{2PC} for multi-key updates. We implemented
-            an Exactly-once RPC protocol on top of an asynchronous network, a primary-backup protocol, 
-            Paxos implemented with the PMMC protocol, and 2PC.}
+            \resumeItem{My partner and I made a sharded transactional KVS that uses \textbf{Paxos} for replication and \textbf{2PC} for multi-key updates. We implemented
+            an Exactly-once RPC protocol on an asynchronous network, a primary-backup protocol, 
+            Paxos, and 2PC.}
           \resumeItemListEnd
           \vspace{-14pt}
     \resumeProjectHeading
@@ -264,21 +271,21 @@
 \vspace{-3pt}
 
 %------------Organizations-----------
-\section{Organizations}
+\section{\textcolor{customred}{Organizations}}
     \vspace{-6pt}
     \resumeSubHeadingListStart
     \resumeProjectHeading
           {\textbf{Engineering Entertainment Design Club} $|$ \emph{Lead Programmer \& Secretary  $|$
-          \href{https://www.linkedin.com/company/cornell-entertainment-engineering-and-design-club/}{Club}}}{Aug 2022 -- Present}
+          \href{https://www.linkedin.com/company/cornell-entertainment-engineering-and-design-club/}{Club}}}{Aug 2022 -- May 2024}
           \resumeItemListStart
-            \resumeItem{Working on a cornhole robot in Python and Arduino $\cdot$ Created a robot that makes cocktails $\cdot$ Worked on our website using HTML, CSS, JS, and Bootstrap 
-            $\cdot$ Managed projects and mentored all software teams, comprising of 20+ members.}
+            \resumeItem{Created entertainment robots $\cdot$ Worked on our website
+            $\cdot$ Led projects and mentored all software teams, over 20 mentees.}
           \resumeItemListEnd
           \vspace{-14pt}
     \resumeProjectHeading
           {\textbf{Cornell Tradition Fellowship} $|$ \emph{Fellow $|$
           \href{https://scl.cornell.edu/get-involved/cornell-commitment/cornell-tradition}{Fellowship}
-          }}{Aug 2020 -- Present}
+          }}{Aug 2020 -- May 2024}
           \resumeItemListStart
             \resumeItem{Contains $<$ 4\% of all students $\cdot$ Keep good grades
              $\cdot$ Work and volunteer during the school year $\cdot$ Do 100+ hours of each.}
