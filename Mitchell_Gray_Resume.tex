@@ -151,7 +151,7 @@
   \resumeSubHeadingListStart
     \resumeSpecialSubheadingGT
       {Georgia Tech, Atlanta, GA}{Jan 2025 -- Aug 2026 (Part-Time)}
-      {Master's of Science, Computer Science}{GPA: 4.0; Machine Learning}%Insert GPA here%
+      {Master's of Science, Computer Science}{GPA: 4.0; Artificial Intelligence}%Insert GPA here%
       %leave 2 lines after this
 
 
@@ -162,8 +162,8 @@
       %leave a line after this
 
       \vspace{2pt}
-      \textbf{Knowledge Domain}: Distributed Systems $\cdot$ Systems Programming $\cdot$ Databases $\cdot$ Cloud Computing 
-      $\cdot$ AI $\cdot$ ML
+      \textbf{Knowledge Domain}: Distributed Systems $\cdot$ Systems Programming $\cdot$ Databases $\cdot$ Cloud $\cdot$
+      AI $\cdot$ Machine Learning
       
     \resumeSubHeadingListEnd
 \vspace{-18pt}
@@ -172,7 +172,7 @@
 \section{\textcolor{customred}{Technical Skills}}
  \begin{itemize}[leftmargin=0.1in, label={}]
     \small{\item{
-     \textbf{Languages}{: C $\cdot$ PL/SQL $\cdot$ C++ $\cdot$ Python $\cdot$ Java $\cdot$ Rust} \\
+     \textbf{Languages}{: C $\cdot$ C++ $\cdot$ Python $\cdot$ PL/SQL $\cdot$ Java $\cdot$ Rust} \\
      \textbf{Software \& Tools}{: 
      Git $\cdot$ NumPy $\cdot$ Pandas $\cdot$ Poetry $\cdot$ CMake $\cdot$ CI/CD $\cdot$ Docker $\cdot$ Kubernetes $\cdot$ GCP $\cdot$ Azure $\cdot$ AWS $\cdot$ REST
      }\\
@@ -184,32 +184,32 @@
 \section{\textcolor{customred}{Relevant Work Experience}}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Oracle}{May 2025 -- Present}
-      {Software Developer II $|$ \textbf{\emph{C, PL/SQL, Raft, Java, OracleDB, OCI}}}{Redwood City, CA}
+      {Oracle}{Sept 2025 -- Present}
+      {Software Engineer II $|$ \textbf{\emph{C, PL/SQL, Raft, Java, OracleDB, OCI}}}{Redwood City, CA}
       \resumeItemListStart
-      \resumeItem {Working on Shard Native Replication (SNR) in the Oracle Globally Distributed Database $\cdot$ 
-      Implementing the \textbf{Raft} Consensus algorithm for Shard Replication $\cdot$ Writing Distributed Systems code in \textbf{C}, \textbf{Java}, and \textbf{PL/SQL}.}
+      \resumeItem {Working on Raft Replication in the Oracle Globally Distributed Database for Shard Replication $\cdot$ 
+      Writing fault-tolerant and scalable Distributed Systems code in \textbf{C}, \textbf{Java}, and \textbf{PL/SQL}.}
+      \resumeItem {Designed and implemented a generic shard-operations replication framework that consolidated multiple 
+      ad-hoc code paths into a single framework $\cdot$ Improved maintainability, scalability, and ease of creating new operations with fewer defects.}
+      \resumeItem {Provided technical mentorship and guided the team's newest engineer $\cdot$ Accelerated onboarding and knowledge transfer.}
       \resumeItemListEnd
 
     \resumeSubheadingPromotion
-    {Software Developer I}{June 2024 -- May 2025}
+    {Software Engineer I}{June 2024 -- Sept 2025}
     \resumeItemListStart
 
-    \resumeItem {Engineered a fault‑tolerant Replica replication feature on Oracle Cloud Infrastructure $\cdot$ 
-    Enforced placement of Raft Replicas on separate server racks to eliminate single‑rack replication-unit failures and improve database availability.}
+    \resumeItem {Engineered a fault‑tolerant replica replication feature on Oracle Cloud Infrastructure $\cdot$ 
+    Enforced placement of Raft replicas on separate server racks to eliminate single‑rack replication-unit failures and improve database availability.}
     \resumeItem {Refactored over 1,200 lines of Sharding serialization code to eliminate a critical data‑loss defect $\cdot$
      Designed robust de/serialization pipelines and multi‑format conversion logic that 
      greatly improved data integrity and system reliability.}
-    \resumeItem {Optimized SNR's Replica "Copy" and "Move" operations $\cdot$ Resolved critical memory management issues, 
-    corrected existing logic errors, and batched I/O calls to significantly enhance reliability and throughput $\cdot$
-    Achieved a \textbf{700\%} performance improvement without workload and \textbf{250\%} improvement under active workloads.}
-    \resumeItem {Resolved critical recoverability issue in SNR's Replica Copy/Move operations by ensuring complete transfer
-    of essential recovery-related tables and data between Replicas $\cdot$ Improved reliability and system integrity during Replica failure.}
-    \resumeItem {Implemented comprehensive Pluggable DBs (PDBs) lifecycle management for SNR $\cdot$ Enabled seamless Drop, 
-    Unplug, and Plug operations of PDBs to streamline maintenance for Sharded Databases using a multi-tenant container architecture.}
-    \resumeItem {Enhanced error-handling mechanisms throughout the SNR codebase $\cdot$ Enabled accurate and timely error 
-    reporting even during database recovery $\cdot$ Optimized error-display logic and filtering, significantly streamlining 
-    database error management $\cdot$ Improved diagnostic speed, and simplified troubleshooting workflows for customers.}
+    \resumeItem {Optimized multiple replica-to-replica data transfer operations $\cdot$ Achieved a \textbf{700\%} performance improvement without workload and 
+    \textbf{250\%} improvement under active workloads after optimization code changes.}
+    \resumeItem {Resolved critical recoverability issue in replica-to-replica data transfer operations by ensuring complete transfer
+    of essential recovery-related tables and data between replicas $\cdot$ Improved reliability and system integrity during failure.}
+    \resumeItem {Implemented comprehensive Pluggable DBs lifecycle management $\cdot$ Enabled seamless
+    Drop, Unplug, and Plug operations of PDBs to streamline maintenance for Raft replicas using Oracle's multi-tenant container architecture.}
+    \resumeItem {Enhanced error-handling mechanisms throughout the codebase $\cdot$ Improved error handling reliablity and diagnosability.}
     \resumeItemListEnd
 
     \resumeSubheading
@@ -228,8 +228,8 @@
       {DevOps Engineer Intern  $|$ \textbf{\emph{Python, Rust, CI/CD, Docker, Kubernetes}}}{Pittsburgh, PA}
       \resumeItemListStart
       \resumeItem {Developed \textbf{Python}, \textbf{Rust}, and \textbf{Bash} code on various NDA projects $\cdot$ Updated and created \textbf{CI/CD} pipelines $\cdot$ Created
-        GitLab \textbf{REST API} data visualizations for clients $\cdot$ Used \textbf{ArgoCD} and \textbf{Helm} to deploy \textbf{AWS EKS} cluster.}
-      \resumeItem {Improved efficiency of the company by using \textbf{Python}, \textbf{Neo4j}, \textbf{NeoDash}, \textbf{Confluence} Documents, and the PageRank algorithm to 
+        GitLab \textbf{REST API} data visualizations for clients $\cdot$ Used ArgoCD and Helm to deploy AWS EKS cluster.}
+      \resumeItem {Improved efficiency of the company by using \textbf{Python}, \textbf{Neo4j}, NeoDash, Confluence Documents, and the PageRank algorithm to 
         create scripts, metrics, and long-term documentation that are now used throughout the company.}
       \resumeItemListEnd
 
@@ -237,8 +237,8 @@
   \resumeSubHeadingListEnd
 \vspace{-18pt}
 
-%----------- Additional Work Experience -----------
-\section{\textcolor{customred}{Additional Work Experience}}
+%----------- Relevant Academic Work Experience -----------
+\section{\textcolor{customred}{Relevant Academic Work Experience}}
   \resumeSubHeadingListStart
 
     \resumeSubheading
@@ -253,8 +253,7 @@
     {Cornell Database Group}{Jan 2022 -- May 2024}
     {Database Research Intern $|$ \textbf{\emph{Java, AWS}}}{Ithaca, NY}
     \resumeItemListStart
-      \resumeItem {Published and presented paper at \textbf{VLDB 2023} on combining Reinforcement Learning and Worst-Case Optimal Joins.
-      }
+      \resumeItem {Published and presented paper at \textbf{VLDB 2023} combining \textbf{Reinforcement Learning} and Worst-Case Optimal Joins.}
       \resumeItem {Worked on upgrading query engine to a \textbf{Distributed Architecture} $\cdot$ Created dynamic statistics \& RL visualizations.
       }
     \resumeItemListEnd
