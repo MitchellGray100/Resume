@@ -120,6 +120,15 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeAward}[3]{%
+  \vspace{-2pt}\item
+  \begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & {\small #3}\\
+    \multicolumn{2}{l}{{\small\textit{#2}}}\\
+  \end{tabular*}\vspace{-7pt}%
+}
+
+
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
@@ -142,7 +151,7 @@
     \href{mailto:mgray88@gatech.edu}{\faEnvelope\ mgray88@gatech.edu} ~ 
     \href{https://www.linkedin.com/in/mitchellegray/}{\faLinkedin\ MitchellEGray}  ~
     \href{https://github.com/MitchellGray100}{\faGithub\ MitchellGray100}
-    \vspace{-8pt}
+    % \vspace{-8pt}
 \end{center}
 
 
@@ -167,7 +176,7 @@
       
       
     \resumeSubHeadingListEnd
-\vspace{-18pt}
+% \vspace{-18pt}
 
 %-----------Technical Skilss-----------
 \section{\textcolor{customred}{Technical Skills}}
@@ -179,21 +188,31 @@
      }\\
     }}
  \end{itemize}
- \vspace{-20pt}
+%  \vspace{-20pt}
 
 %-----------EXPERIENCE-----------
 \section{\textcolor{customred}{Relevant Work Experience}}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Oracle}{Sept 2025 -- Present}
-      {Software Engineer II $|$ \textbf{\emph{C, PL/SQL, Raft, Java, OracleDB, OCI}}}{Redwood City, CA}
+      {Oracle}{Sept 2026 -- Present}
+      {Senior Software Engineer $|$ \textbf{\emph{C, PL/SQL, Raft, Java, OracleDB, OCI}}}{Redwood City, CA}
       \resumeItemListStart
       \resumeItem {Working on Raft Replication in the Oracle Globally Distributed Database for Shard Replication $\cdot$ 
       Writing fault-tolerant and scalable Distributed Systems code in \textbf{C}, \textbf{Java}, and \textbf{PL/SQL}.}
       \resumeItem {Designed and implemented a generic shard-operations replication framework that consolidated multiple 
       ad-hoc code paths into a single framework $\cdot$ Improved maintainability, scalability, and ease of creating new operations with fewer defects.}
-      \resumeItem {Provided technical mentorship and guided the team's newest engineer $\cdot$ Accelerated onboarding and knowledge transfer.}
       \resumeItemListEnd
+
+    \resumeSubheadingPromotion
+    {Software Engineer II}{Sept 2025 -- Sept 2026}
+    \resumeItemListStart
+      \resumeItem {Designed and implemented a generic shard-operations replication framework that consolidated multiple 
+      ad-hoc code paths into a single framework $\cdot$ Improved maintainability, scalability, and ease of creating new operations with fewer defects.}
+      \resumeItem {Provided technical mentorship and guided the team's newest engineer $\cdot$ Accelerated onboarding and knowledge transfer.}
+      \resumeItem {Designed and implemented a generic shard-operations replication framework that consolidated multiple 
+      ad-hoc code paths into a single framework $\cdot$ Improved maintainability, scalability, and ease of creating new operations with fewer defects.}
+      \resumeItem {Provided technical mentorship and guided the team's newest engineer $\cdot$ Accelerated onboarding and knowledge transfer.}
+    \resumeItemListEnd
 
     \resumeSubheadingPromotion
     {Software Engineer I}{June 2024 -- Sept 2025}
@@ -236,18 +255,36 @@
 
   
   \resumeSubHeadingListEnd
-\vspace{-18pt}
+% \vspace{-18pt}
+
+\newpage
 
 %----------- Relevant Academic Work Experience -----------
 \section{\textcolor{customred}{Relevant Academic Work Experience}}
   \resumeSubHeadingListStart
+    \resumeSubheading
+    {Georgia Tech Contextual Computing Group}{June 2025 -- Aug 2026}
+    {Graduate Teaching Assistant $|$ \textbf{\emph{AI, ML}}}{Atlanta, GA}
+    \resumeItemListStart
+      \resumeItem {Worked on Nosi, an IDE that utilizes \textbf{Machine Learning} to detect cheating students $\cdot$
+                    Published in \textbf{Learning at Scale 2026} and \textbf{AI Ed 2026} $\cdot$ Integrated the IDE in multiple Georgia Tech Graduate CS courses
+                    $\cdot$ Sold our solution to multiple companies including a \textbf{Fortune 50} company.}
+    \resumeItemListEnd
 
     \resumeSubheading
-    {Georgia Tech \& Cornell University}{Aug 2022 -- Present}
-    {Graduate Teaching Assistant $|$ \textbf{\emph{Python, NumPy, SQL, Java}}}{Atlanta, Georgia \& Ithaca, NY}
+    {Georgia Tech}{May 2025 -- Aug 2026}
+    {Graduate Teaching Assistant $|$ \textbf{\emph{AI, Python, NumPy}}}{Atlanta, GA}
     \resumeItemListStart
-      \resumeItem {Received the \textbf{Course Staff Exceptional Service Award} $\cdot$ Taught Graduate AI, Databases, OOP, and Physics.
-      }
+      \resumeItem {Taught Graduate \textbf{Artificial Intelligence} $\cdot$ Held Office Hours weekly $\cdot$ Created exams questions.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {Cornell University}{Aug 2022 -- May 2024}
+    {Teaching Assistant $|$ \textbf{\emph{Python, NumPy, SQL, Java}}}{Ithaca, NY}
+    \resumeItemListStart
+      \resumeItem {Received the \textbf{Course Staff Exceptional Service Award} $\cdot$ Taught Databases, Object-Oriented Programming, and Physics 
+                    $\cdot$ Lectured 400+ students with custom-designed lecture content
+                    $\cdot$ Led Exam sessions and other TAs.}
     \resumeItemListEnd
 
     \resumeSubheading
@@ -260,6 +297,60 @@
     \resumeItemListEnd
 
   \resumeSubHeadingListEnd
- \vspace{-20pt}
+%  \vspace{-20pt}
+
+%----------- Publications -----------
+\section{\textcolor{customred}{Publications}}
+  \resumeSubHeadingListStart
+    \resumeAward{AI ED [link]}{Publication}{2026}
+    \resumeAward{Learning at Scale [link]}{Publication}{2026}
+    \resumeAward{VLDB [link]}{Publication}{2023}
+  \resumeSubHeadingListEnd
+
+%----------- Awards -----------
+\section{\textcolor{customred}{Awards}}
+  \resumeSubHeadingListStart
+    \resumeAward{Oracle}{Mentorship and Leadership Award}{Date 2026}
+    \resumeAward{Cornell Bowers CIS}{Course Staff Exceptional Service Award}{May 2024}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{\textcolor{customred}{Projects}}
+    % \vspace{-6pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Distributed Testing Platform (SPEED)} $|$ Masters Project $|$ \textbf{\emph{Java, JUnit, Cloud}\emph{ $|$
+          \href{https://github.com/MitchellGray100/SPEED}{Github}}}}{Aug 2023 -- May 2024}
+          \resumeItemListStart
+            \resumeItem{My team and I created a \underline{S}calable \underline{P}latform for \underline{E}fficient \underline{E}xecution of
+            \underline{D}istributed testing. The fault-tolerant system contains a controller node that orchestrates worker nodes that 
+            run \textbf{JUnit} tests on \textbf{Java} code. The worker nodes report their findings to the controller. Once all tests are ran, test results are
+            shown in the frontend to the user.
+            }
+          \resumeItemListEnd
+          \vspace{-14pt}
+    \resumeProjectHeading
+          {\textbf{DS-Labs Sharded Key Value Store} $|$ Distributed Computing $|$ \textbf{\emph{Java, Paxos, 2PC}}\emph{ $|$
+          \href{https://github.com/emichael/dslabs}{Github}}}{Jan 2023 -- May 2023}
+          \resumeItemListStart
+            \resumeItem{Using the DS-Lab framework, my partner and I were able to create a sharded transactional key-value 
+            store that uses \textbf{Paxos} for replication and \textbf{2PC} for multi-key updates. We implemented
+            an Exactly-once RPC protocol on top of an asynchronous network, a primary-backup protocol, 
+            Paxos implemented with the PMMC protocol, and 2PC.}
+          \resumeItemListEnd
+          \vspace{-14pt}
+    \resumeProjectHeading
+          {\textbf{Cornell Meetup} $|$ Cloud Computing $|$ \textbf{\emph{Azure, CosmosDB, Python, WebDev}}\emph{ $|$
+          \href{https://github.com/MitchellGray100/CornellMeetUp}{Github}
+          $|$ \href{https://cis.cornell.edu/about/outreach-events/boom-bits-our-minds/projects/boom-2023-projects}
+          {BOOM}}}{Aug 2022 -- Dec 2022}
+          \resumeItemListStart
+            \resumeItem{1 of 32 projects selected for BOOM 2023. My partner and I created a 
+            social media web app that allows users to create groups, chat with friends,
+            and see where their friends are when on campus. Accounts details were obfuscated and salted.}
+          \resumeItemListEnd
+          \vspace{-14pt}
+    \resumeSubHeadingListEnd
+% \vspace{-3pt}
 % adjust vscape based on the space you want to leave between each section.
 \end{document}
