@@ -120,7 +120,7 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeAward}[3]{%
+\newcommand{\resumePublication}[3]{%
   \vspace{-2pt}\item
   \begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{#1} & {\small #3}\\
@@ -128,6 +128,13 @@
   \end{tabular*}\vspace{-7pt}%
 }
 
+\newcommand{\resumeAward}[3]{%
+  \vspace{-2pt}\item
+  \begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & {\small\textit{#2}} \\
+    \multicolumn{2}{p{\linewidth}}{{\footnotesize #3}}\\
+  \end{tabular*}\vspace{-7pt}%
+}
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
@@ -182,7 +189,7 @@
 \section{\textcolor{customred}{Technical Skills}}
  \begin{itemize}[leftmargin=0.1in, label={}]
     \small{\item{
-     \textbf{Languages}{: C $\cdot$ C++ $\cdot$ Python $\cdot$ PL/SQL $\cdot$ Java $\cdot$ Rust} \\
+     \textbf{Languages}{: C $\cdot$ C++ $\cdot$ Python $\cdot$ Java $\cdot$ Rust $\cdot$ PL/SQL} \\
      \textbf{Software \& Tools}{: 
      Git $\cdot$ Pytorch $\cdot$ Scikit-learn $\cdot$ NumPy $\cdot$ Pandas $\cdot$ Poetry $\cdot$ CMake $\cdot$ CI/CD $\cdot$ Docker $\cdot$ K8s $\cdot$ Azure $\cdot$ AWS
      }\\
@@ -199,8 +206,8 @@
       \resumeItemListStart
       \resumeItem {Working on Raft Replication in the Oracle Globally Distributed Database for Shard Replication $\cdot$ 
       Writing fault-tolerant and scalable Distributed Systems code in \textbf{C}, \textbf{Java}, and \textbf{PL/SQL}.}
-      \resumeItem {Designed and implemented a generic shard-operations replication framework that consolidated multiple 
-      ad-hoc code paths into a single framework $\cdot$ Improved maintainability, scalability, and ease of creating new operations with fewer defects.}
+      \resumeItem { placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder 
+       placeholder placeholder placeholder placeholder $\cdot$  placeholder placeholder placeholder placeholder placeholder placeholder.}
       \resumeItemListEnd
 
     \resumeSubheadingPromotion
@@ -208,10 +215,10 @@
     \resumeItemListStart
       \resumeItem {Designed and implemented a generic shard-operations replication framework that consolidated multiple 
       ad-hoc code paths into a single framework $\cdot$ Improved maintainability, scalability, and ease of creating new operations with fewer defects.}
-      \resumeItem {Provided technical mentorship and guided the team's newest engineer $\cdot$ Accelerated onboarding and knowledge transfer.}
-      \resumeItem {Designed and implemented a generic shard-operations replication framework that consolidated multiple 
-      ad-hoc code paths into a single framework $\cdot$ Improved maintainability, scalability, and ease of creating new operations with fewer defects.}
-      \resumeItem {Provided technical mentorship and guided the team's newest engineer $\cdot$ Accelerated onboarding and knowledge transfer.}
+      \resumeItem {Received \textbf{Training \& Mentorship Excellence Award} $\cdot$ Provided technical mentorship to our newest engineer.}
+      \resumeItem { placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder 
+       placeholder placeholder placeholder placeholder $\cdot$  placeholder placeholder placeholder placeholder placeholder placeholder.}
+      \resumeItem { Fixed critical vulnerabilities in slow-follower throttling functionality $\cdot$ Implemented new throttling algorithms.}
     \resumeItemListEnd
 
     \resumeSubheadingPromotion
@@ -248,9 +255,9 @@
       {DevOps Engineer Intern  $|$ \textbf{\emph{Python, Rust, CI/CD, Docker, Kubernetes}}}{Pittsburgh, PA}
       \resumeItemListStart
       \resumeItem {Developed \textbf{Python}, \textbf{Rust}, and \textbf{Bash} code on various NDA projects $\cdot$ Updated and created \textbf{CI/CD} pipelines $\cdot$ Created
-        GitLab \textbf{REST API} data visualizations for clients $\cdot$ Used ArgoCD and Helm to deploy AWS EKS cluster.}
-      \resumeItem {Improved efficiency of the company by using \textbf{Python}, \textbf{Neo4j}, NeoDash, Confluence Documents, and the PageRank algorithm to 
-        create scripts, metrics, and long-term documentation that are now used throughout the company.}
+        GitLab \textbf{REST API} live data visualizations for clients $\cdot$ Used ArgoCD and Helm to deploy AWS EKS cluster.}
+      \resumeItem {Built internal analytics tools using \textbf{Python}, \textbf{Neo4j}, NeoDash, and PageRank-based graph analysis to 
+        generate engineering metrics and documentation adopted across multiple teams within the company.}
       \resumeItemListEnd
 
   
@@ -264,23 +271,22 @@
   \resumeSubHeadingListStart
     \resumeSubheading
     {Georgia Tech Contextual Computing Group}{June 2025 -- Aug 2026}
-    {Graduate Teaching Assistant $|$ \textbf{\emph{AI, ML}}}{Atlanta, GA}
+    {Graduate Researcher $|$ \textbf{\emph{AI, ML, Python, Typescript}}}{Atlanta, GA}
     \resumeItemListStart
-      \resumeItem {Worked on Nosi, an IDE that utilizes \textbf{Machine Learning} to detect cheating students $\cdot$
-                    Published in \textbf{Learning at Scale 2026} and \textbf{AI Ed 2026} $\cdot$ Integrated the IDE in multiple Georgia Tech Graduate CS courses
-                    $\cdot$ Sold our solution to multiple companies including a \textbf{Fortune 50} company.}
+      \resumeItem {Worked on Nosi, an IDE that combines an encrypted virtual file system and application behavior-logging $\cdot$ Utilizes \textbf{Machine Learning} techniques to analyze behavioral data and flag potentially-cheating students.}
+                    \resumeItem {Published at \textbf{Learning at Scale 2026} $\cdot$ Integrated the IDE into multiple Georgia Tech graduate-level CS courses.}
     \resumeItemListEnd
 
     \resumeSubheading
     {Georgia Tech}{May 2025 -- Aug 2026}
     {Graduate Teaching Assistant $|$ \textbf{\emph{AI, Python, NumPy}}}{Atlanta, GA}
     \resumeItemListStart
-      \resumeItem {Taught Graduate \textbf{Artificial Intelligence} $\cdot$ Held Office Hours weekly $\cdot$ Created exams questions.}
+      \resumeItem {Taught graduate-level \textbf{Artificial Intelligence} $\cdot$ Helped with new plagiarism-detection tooling integration.}
     \resumeItemListEnd
 
     \resumeSubheading
     {Cornell University}{Aug 2022 -- May 2024}
-    {Teaching Assistant $|$ \textbf{\emph{Python, NumPy, SQL, Java}}}{Ithaca, NY}
+    {Undergraduate Teaching Assistant $|$ \textbf{\emph{Python, NumPy, SQL, Java}}}{Ithaca, NY}
     \resumeItemListStart
       \resumeItem {Received the \textbf{Course Staff Exceptional Service Award} $\cdot$ Taught Databases, Object-Oriented Programming, and Physics 
                     $\cdot$ Lectured 400+ students with custom-designed lecture content
@@ -289,7 +295,7 @@
 
     \resumeSubheading
     {Cornell Database Group}{Jan 2022 -- May 2024}
-    {Database Research Intern $|$ \textbf{\emph{Java, AWS}}}{Ithaca, NY}
+    {Undergraduate Researcher $|$ \textbf{\emph{ML, Java, AWS}}}{Ithaca, NY}
     \resumeItemListStart
       \resumeItem {Published and presented paper at \textbf{VLDB 2023} combining \textbf{Reinforcement Learning} and Worst-Case Optimal Joins.}
       \resumeItem {Worked on upgrading query engine to a \textbf{Distributed Architecture} $\cdot$ Created dynamic statistics \& RL visualizations.
@@ -302,27 +308,39 @@
 %----------- Publications -----------
 \section{\textcolor{customred}{Publications}}
   \resumeSubHeadingListStart
-    \resumeAward{AI ED [link]}{Publication}{2026}
-    \resumeAward{Learning at Scale [link]}{Publication}{2026}
-    \resumeAward{VLDB [link]}{Publication}{2023}
+    \resumePublication{Learning at Scale (2026)}
+    {Nosi IDE: Securing Coding Assessment Integrity in the Age of
+     LLMs via Process-Driven Analytics}
+     {[\href{https://dl.acm.org/doi/abs/10.14778/3611540.3611629}
+     {https://dl.acm.org/doi/abs/10.14778/3611540.3611629}]} % TODO update link
+    \resumePublication{VLDB (2023)}
+    {Demonstrating ADOPT: Adaptively Optimizing Attribute Orders 
+    for Worst-Case Optimal Joins via Reinforcement Learning}
+    {[\href{https://dl.acm.org/doi/abs/10.14778/3611540.3611629}
+    {https://dl.acm.org/doi/abs/10.14778/3611540.3611629}]}
   \resumeSubHeadingListEnd
 
 %----------- Awards -----------
 \section{\textcolor{customred}{Awards}}
   \resumeSubHeadingListStart
-    \resumeAward{Oracle}{Mentorship and Leadership Award}{Date 2026}
-    \resumeAward{Cornell Bowers CIS}{Course Staff Exceptional Service Award}{May 2024}
+    \resumeAward{Oracle, Database Organization}
+    {Mentorship and Leadership Excellence Award}
+    {Recognizes outstanding efforts in mentorship and training of others that go above and beyond the call of duty. Multi-day, multi-recipient efforts beyond the direct organization.}
+    \resumeAward{Cornell Bowers CIS}
+    {Course Staff Exceptional Service Award}
+    {Faculty-nominated award for exceptional commitment, hard-work, dedication, and exceptional service of a Teaching Assistant during the 2023-2024 academic year.}
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
-\section{\textcolor{customred}{Projects}}
+\section{\textcolor{customred}{Relevant Projects}}
     % \vspace{-6pt}
     \resumeSubHeadingListStart
     \resumeProjectHeading
-          {\textbf{Distributed Testing Platform (SPEED)} $|$ Masters Project $|$ \textbf{\emph{Java, JUnit, Cloud}\emph{ $|$
-          \href{https://github.com/MitchellGray100/SPEED}{Github}}}}{Aug 2023 -- May 2024}
+          {\textbf{New AI Infra Project Placeholder} $|$ Personal Project $|$ \textbf{\emph{AI, Go} $|$}
+          \emph{\href{https://github.com/MitchellGray100/placeholder}{Github}}}{May 2026 -- Present}
           \resumeItemListStart
-            \resumeItem{My team and I created a \underline{S}calable \underline{P}latform for \underline{E}fficient \underline{E}xecution of
+          % TODO: placeholder
+            \resumeItem{1 of 44 projects selected for BOOM 2024. My team and I created a \underline{S}calable \underline{P}latform for \underline{E}fficient \underline{E}xecution of
             \underline{D}istributed testing. The fault-tolerant system contains a controller node that orchestrates worker nodes that 
             run \textbf{JUnit} tests on \textbf{Java} code. The worker nodes report their findings to the controller. Once all tests are ran, test results are
             shown in the frontend to the user.
@@ -330,24 +348,33 @@
           \resumeItemListEnd
           \vspace{-14pt}
     \resumeProjectHeading
-          {\textbf{DS-Labs Sharded Key Value Store} $|$ Distributed Computing $|$ \textbf{\emph{Java, Paxos, 2PC}}\emph{ $|$
-          \href{https://github.com/emichael/dslabs}{Github}}}{Jan 2023 -- May 2023}
+          {\textbf{Improving 3D Point-Cloud Classification} $|$ Deep Learning $|$ \textbf{\emph{AI, Python, Pytorch}}\emph{ $|$
+          \href{https://github.com/MitchellGray100/3D_Point_Cloud_Classification}{Github}}}{Aug 2025 -- Dec 2025}
           \resumeItemListStart
-            \resumeItem{Using the DS-Lab framework, my partner and I were able to create a sharded transactional key-value 
-            store that uses \textbf{Paxos} for replication and \textbf{2PC} for multi-key updates. We implemented
-            an Exactly-once RPC protocol on top of an asynchronous network, a primary-backup protocol, 
-            Paxos implemented with the PMMC protocol, and 2PC.}
+            \resumeItem{For this project, we re-implemented and upgraded state-of-the-art point 
+            cloud classification Deep Neural Networks. We started by implementing PointNet and 
+            PointPillars. Then we upgraded them by modifying their architecture, adding Dropout, 
+            implementing Data augmentation, and introducing Residual Connections. We improved 
+            validation accuracy by 4\% and massively reduced overfitting.}
           \resumeItemListEnd
           \vspace{-14pt}
     \resumeProjectHeading
-          {\textbf{Cornell Meetup} $|$ Cloud Computing $|$ \textbf{\emph{Azure, CosmosDB, Python, WebDev}}\emph{ $|$
-          \href{https://github.com/MitchellGray100/CornellMeetUp}{Github}
-          $|$ \href{https://cis.cornell.edu/about/outreach-events/boom-bits-our-minds/projects/boom-2023-projects}
-          {BOOM}}}{Aug 2022 -- Dec 2022}
+          {\textbf{Distributed Testing Platform (SPEED)} $|$ Masters Project $|$ \textbf{\emph{Java} $|$}
+          \emph{\href{https://github.com/MitchellGray100/SPEED}{Github} $|$ \href{https://bowers.cornell.edu/events/bits-on-our-minds-boom/projects}
+          {BOOM}}}{Aug 2023 -- May 2024}
           \resumeItemListStart
-            \resumeItem{1 of 32 projects selected for BOOM 2023. My partner and I created a 
-            social media web app that allows users to create groups, chat with friends,
-            and see where their friends are when on campus. Accounts details were obfuscated and salted.}
+            \resumeItem{1 of 44 projects selected for BOOM 2024. My team and I created a \underline{S}calable \underline{P}latform for \underline{E}fficient \underline{E}xecution of
+            \underline{D}istributed testing. The fault-tolerant system contains a controller node that orchestrates worker nodes that 
+            run \textbf{JUnit} tests on \textbf{Java} code. The worker nodes report their findings to the controller. Once all tests are ran, test results are
+            shown in the frontend to the user.
+            }
+          \resumeItemListEnd
+          \vspace{-14pt}
+    \resumeProjectHeading
+          {\textbf{SpGEMM Parallelization on GPUs} $|$ Parallel Computing $|$ \textbf{\emph{CUDA, C++}}\emph{ $|$
+          \href{https://github.com/TTDDClasses/cs5220FinalProject}{Github}}}{Jan 2024 -- May 2024}
+          \resumeItemListStart
+            \resumeItem{In this project, our team parallelized sparse-matrix multiplication operations using GPUs and experimented with multiple variations of the algorithm, massively improving performance of the algorithms.}
           \resumeItemListEnd
           \vspace{-14pt}
     \resumeSubHeadingListEnd
