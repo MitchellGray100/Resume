@@ -101,7 +101,7 @@
 \newcommand{\resumeSpecialSubheadingGT}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\
+      \textbf{#1} & \textit{\small #2} \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
@@ -167,15 +167,15 @@
 \section{\textcolor{customred}{Education}}
   \resumeSubHeadingListStart
     \resumeSpecialSubheadingGT
-      {Georgia Tech, Atlanta, GA}{Jan 2025 – Aug 2026 (Part-Time)}
-      {Master's of Science, Computer Science}{GPA: 4.0; Artificial Intelligence}%Insert GPA here%
+      {Georgia Tech, Atlanta, GA}{GPA: 4.0}
+      {Master's of Science, Computer Science}{Artificial Intelligence}%Insert GPA here%
       %leave 2 lines after this
 
 
     \resumeSpecialSubheadingCornell
-      {Cornell University, Ithaca, NY}{Aug 2020 – May 2024}
+      {Cornell University, Ithaca, NY}{}
       {Bachelor's of Science, Computer Science}{Distributed Systems}%Insert GPA here%
-      {Minor, Operations Research Information Engineering}{30 Extra Graduate-Level Credits}
+      {Minor, Operations Research Information Engineering}{M.Eng Equivalence}
       %leave a line after this
 
       \vspace{2pt}
@@ -213,18 +213,21 @@
     \resumeSubheadingPromotion
     {Software Engineer II}{Sept 2025 -- Sept 2026}
     \resumeItemListStart
+      \resumeItem {Received \textbf{Training \& Mentorship Excellence Award} $\cdot$ Provided technical mentorship to our newest engineer.}
       \resumeItem {Designed and implemented a generic shard-operations replication framework that consolidated multiple 
       ad-hoc code paths into a single framework $\cdot$ Improved maintainability, scalability, and ease of creating new operations with fewer defects.}
-      \resumeItem {Received \textbf{Training \& Mentorship Excellence Award} $\cdot$ Provided technical mentorship to our newest engineer.}
-      \resumeItem { placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder 
-       placeholder placeholder placeholder placeholder $\cdot$  placeholder placeholder placeholder placeholder placeholder placeholder.}
-      \resumeItem { Fixed critical vulnerabilities in slow-follower throttling functionality $\cdot$ Implemented new throttling algorithms.}
+      \resumeItem {Improved deployment algorithms when specifying server rack requirements to more evenly spread replicas across shards automatically $\cdot$
+       Improved CLI user-interface to view user-specified rack information across all shards.}
+      \resumeItem {Implemented comprehensive Pluggable DBs lifecycle management $\cdot$ Enabled seamless
+      Drop, Unplug, and Plug operations of PDBs to streamline maintenance for Raft replicas using Oracle's multi-tenant container architecture.}
+      \resumeItem { Fixed vulnerabilities in slow-replica throttling functionality $\cdot$ Implemented new throttling algorithms to improve fail-over.}
     \resumeItemListEnd
+
+    \vspace{-7pt}
 
     \resumeSubheadingPromotion
     {Software Engineer I}{June 2024 -- Sept 2025}
     \resumeItemListStart
-
     \resumeItem {Engineered a fault‑tolerant replica replication feature on Oracle Cloud Infrastructure $\cdot$ 
     Enforced placement of Raft replicas on separate server racks to eliminate single‑rack replication-unit failures and improve database availability.}
     \resumeItem {Refactored over 1,200 lines of Sharding serialization code to eliminate a critical data‑loss defect $\cdot$
@@ -234,8 +237,6 @@
     \textbf{250\%} improvement under active workloads after optimization code changes.}
     \resumeItem {Resolved critical recoverability issue in replica-to-replica data transfer operations by ensuring complete transfer
     of essential recovery-related tables and data between replicas $\cdot$ Improved reliability and system integrity during failure.}
-    \resumeItem {Implemented comprehensive Pluggable DBs lifecycle management $\cdot$ Enabled seamless
-    Drop, Unplug, and Plug operations of PDBs to streamline maintenance for Raft replicas using Oracle's multi-tenant container architecture.}
     \resumeItem {Enhanced error-handling mechanisms throughout the codebase $\cdot$ Improved error handling reliability and diagnosability.}
     \resumeItemListEnd
 
@@ -247,7 +248,6 @@
       \resumeItem { Worked on the Robot Controls team $\cdot$ Wrote code for an asynchronous distributed system in \textbf{C++}, \textbf{Python}, and \textbf{C}.} 
       \resumeItem { Revamped Robot \& DAQ emulators $\cdot$ Implemented communications protocol and Client/Server TCP networking.}
       \resumeItem { Replaced VS build-system with \textbf{CMake} $\cdot$ Added calibration support to emulators $\cdot$ Integrated \textbf{CI/CD} and \textbf{Poetry}.}
-%Based on the number of point you want to add add the "\resumeItem" for each point you want to add.
       \resumeItemListEnd
     
     \resumeSubheading
@@ -273,8 +273,13 @@
     {Georgia Tech Contextual Computing Group}{June 2025 -- Aug 2026}
     {Graduate Researcher $|$ \textbf{\emph{AI, ML, Python, Typescript}}}{Atlanta, GA}
     \resumeItemListStart
-      \resumeItem {Worked on Nosi, an IDE that combines an encrypted virtual file system and application behavior-logging $\cdot$ Utilizes \textbf{Machine Learning} techniques to analyze behavioral data and flag potentially-cheating students.}
-                    \resumeItem {Published at \textbf{Learning at Scale 2026} $\cdot$ Integrated the IDE into multiple Georgia Tech graduate-level CS courses.}
+      \resumeItem {Worked on Nosi, an IDE that combines an encrypted virtual file system and application behavior-logging 
+      $\cdot$ Utilizes \textbf{Machine Learning} techniques to analyze behavioral data and flag potentially-cheating students.}
+      \resumeItem {Published at \textbf{Learning at Scale 2026} $\cdot$ 
+      Integrated the IDE into multiple Georgia Tech graduate-level CS courses.}
+      \resumeItem {Created models that can detect the difference between human-coding and code transcription $\cdot$
+      Implemented tools to help review flagged cheating cases and replay student interactions with the IDE $\cdot$ Developed scripts
+      that automatically generate encrypted repositories for students and decrypt them for the auto-grader.}
     \resumeItemListEnd
 
     \resumeSubheading
