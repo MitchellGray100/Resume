@@ -179,7 +179,7 @@
       %leave a line after this
 
       \vspace{2pt}
-      \textbf{Knowledge Domain}: Distributed Systems $\cdot$ Systems Programming $\cdot$ AI $\cdot$ Machine Learning $\cdot$ Databases $\cdot$ Cloud
+      \textbf{Focus Areas}: Distributed Systems $\cdot$ Systems Programming $\cdot$ AI $\cdot$ Machine Learning $\cdot$ Databases $\cdot$ Cloud
       
       
     \resumeSubHeadingListEnd
@@ -191,7 +191,7 @@
     \small{\item{
      \textbf{Languages}{: C $\cdot$ C++ $\cdot$ Python $\cdot$ Java $\cdot$ Rust $\cdot$ PL/SQL} \\
      \textbf{Software \& Tools}{: 
-     Git $\cdot$ Pytorch $\cdot$ Scikit-learn $\cdot$ NumPy $\cdot$ Pandas $\cdot$ Poetry $\cdot$ CMake $\cdot$ CI/CD $\cdot$ Docker $\cdot$ K8s $\cdot$ Azure $\cdot$ AWS
+     Git $\cdot$ Pytorch $\cdot$ Docker $\cdot$ Kubernetes $\cdot$ Scikit-learn $\cdot$ NumPy $\cdot$ Pandas $\cdot$ Poetry $\cdot$ CMake $\cdot$ CI/CD
      }\\
     }}
  \end{itemize}
@@ -204,7 +204,7 @@
       {Oracle}{Sept 2025 -- Present}
       {Software Engineer II $|$ \textbf{\emph{C, PL/SQL, Raft, Java, OracleDB, OCI}}}{Redwood City, CA}
       \resumeItemListStart
-      \resumeItem {Working on Raft Replication in the Oracle Globally Distributed Database for Shard Replication $\cdot$ 
+      \resumeItem {Developing Raft Replication infrastructure in the Oracle Globally Distributed Database used for Shard Replication $\cdot$ 
       Writing fault-tolerant and scalable Distributed Systems code in \textbf{C}, \textbf{Java}, and \textbf{PL/SQL}.}
       \resumeItem {Received \textbf{Training \& Mentorship Excellence Award} $\cdot$ Provided technical mentorship to our newest engineer.}
       \resumeItem {Designed and implemented a generic shard-operations marker framework that consolidated multiple 
@@ -212,8 +212,11 @@
       \resumeItem {Architected and implemented advanced deployment algorithms when specifying server rack requirements to more evenly balance replicas across shards automatically $\cdot$
        Improved CLI user-interface to view user-specified rack information.}
       \resumeItem {Implemented comprehensive Pluggable DBs lifecycle management $\cdot$ Enabled seamless
-      Drop, Unplug, and Plug operations of PDBs to streamline maintenance for Raft replicas using Oracle's multi-tenant container architecture.}
-      \resumeItem {Fixed vulnerabilities in slow-replica flow-control $\cdot$ Implemented new flow-control algorithms to improve fail-over.}
+      Drop, Unplug, Plug, Clone, and Relocate operations to streamline maintenance for Raft replicas using Oracle's multi-tenant container architecture.}
+      \resumeItem{Led remediation of shard-to-shard TDE encryption defects by unifying divergent serialization paths $\cdot$ 
+      Preserved encryption metadata during replica transfer, enabling reliable decryption on receiving shards and 
+      restoring correctness for TDE-enabled shard replication workflows.}
+      \resumeItem{Improved slow-replica flow control $\cdot$ Implemented new throttling logic to stabilize replication with degraded replicas.}
     \resumeItemListEnd
 
     \vspace{-1pt}
@@ -233,6 +236,8 @@
     \resumeItem {Enhanced error-handling mechanisms throughout the codebase $\cdot$ Improved error handling reliability and diagnosability.}
     \resumeItemListEnd
 
+    \vspace{4pt}
+
     \resumeSubheading
       {Gecko Robotics}
       {May 2023 -- Aug 2023}
@@ -243,12 +248,14 @@
       \resumeItem { Replaced VS build-system with \textbf{CMake} $\cdot$ Added calibration support to emulators $\cdot$ Integrated \textbf{CI/CD} and \textbf{Poetry}.}
       \resumeItemListEnd
     
+    \vspace{4pt}
+
     \resumeSubheading
       {Carnegie Mellon University - Software Engineering Institute }{May 2022 -- May 2023}
       {DevOps Engineer Intern  $|$ \textbf{\emph{Python, Rust, CI/CD, Docker, Kubernetes}}}{Pittsburgh, PA}
       \resumeItemListStart
       \resumeItem {Developed \textbf{Python}, \textbf{Rust}, and \textbf{Bash} code on various NDA projects $\cdot$ Updated and created \textbf{CI/CD} pipelines $\cdot$ Created
-        GitLab \textbf{REST API} live data visualizations for clients $\cdot$ Used ArgoCD and Helm to deploy AWS EKS cluster.}
+        GitLab \textbf{REST API} live data visualizations for clients $\cdot$ Used ArgoCD and Helm to deploy \textbf{Kubernetes} clusters.}
       \resumeItem {Built internal analytics tools using \textbf{Python}, \textbf{Neo4j}, NeoDash, and PageRank-based graph analysis to 
         generate engineering metrics and documentation adopted across multiple teams within the company.}
       \resumeItemListEnd
@@ -263,7 +270,7 @@
 \section{\textcolor{customred}{Relevant Academic Work Experience}}
   \resumeSubHeadingListStart
     \resumeSubheading
-    {Georgia Tech Contextual Computing Group}{June 2025 -- Aug 2026}
+    {Georgia Tech Contextual Computing Group}{June 2025 -- July 2026}
     {Graduate Researcher $|$ \textbf{\emph{AI, ML, Python, Typescript}}}{Atlanta, GA}
     \resumeItemListStart
       \resumeItem {Worked on Nosi, an IDE that combines an encrypted virtual file system and application behavior-logging 
@@ -276,7 +283,7 @@
     \resumeItemListEnd
 
     \resumeSubheading
-    {Georgia Tech}{May 2025 -- Aug 2026}
+    {Georgia Tech}{May 2025 -- May 2026}
     {Graduate Teaching Assistant $|$ \textbf{\emph{AI, Python, NumPy}}}{Atlanta, GA}
     \resumeItemListStart
       \resumeItem {Taught graduate-level \textbf{Artificial Intelligence} $\cdot$ Helped with new plagiarism-detection tooling integration.}
@@ -339,22 +346,16 @@
     % \vspace{-6pt}
     \resumeSubHeadingListStart
     \resumeProjectHeading
-          {\textbf{New AI Infra Project Placeholder} $|$ Personal Project $|$ \textbf{\emph{AI, Go} $|$}
-          \emph{\href{https://github.com/MitchellGray100/placeholder}{Github}}}{May 2026 -- Present}
+          {\textbf{Inference Serving Platform} $|$ Personal Project $|$ \textbf{\emph{Go, Kubernetes, vLLM, Docker} $|$}
+          \emph{\href{https://github.com/MitchellGray100/InferenceServing}{Github}}}{April 2026 -- Present}
           \resumeItemListStart
           % TODO: placeholder
-            \resumeItem{placeholder placeholder placeholder placeholder 
-            placeholder placeholder placeholder placeholder placeholder 
-            placeholder placeholder placeholder placeholder placeholder 
-            placeholder placeholder placeholder placeholder placeholder 
-            placeholder placeholder placeholder placeholder placeholder 
-            placeholder placeholder placeholder placeholder placeholder 
-            placeholder placeholder placeholder placeholder placeholder 
-            }
+            \resumeItem{Building a cloud-hosted inference serving platform for deploying open-source LLMs behind scalable HTTP APIs $\cdot$ Implementing request routing, model container orchestration, autoscaling, and GPU-aware scheduling on Kubernetes.}
+            \resumeItem{Integrating vLLM-based inference workers with asynchronous job queues, health checks, structured logging, and deployment metadata to support reliable model serving across multiple replicas.}
           \resumeItemListEnd
           \vspace{-14pt}
     \resumeProjectHeading
-          {\textbf{Improving 3D Point-Cloud Classification} $|$ Deep Learning $|$ \textbf{\emph{AI, Python, Pytorch}}\emph{ $|$
+          {\textbf{Improving 3D Point-Cloud Classification} $|$ Deep Learning $|$ \textbf{\emph{AI, Python, PyTorch}}\emph{ $|$
           \href{https://github.com/MitchellGray100/3D_Point_Cloud_Classification}{Github}}}{Aug 2025 -- Dec 2025}
           \resumeItemListStart
             \resumeItem{Re-implemented and upgraded state-of-the-art point 
