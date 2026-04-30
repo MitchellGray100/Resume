@@ -101,7 +101,7 @@
 \newcommand{\resumeSpecialSubheadingGT}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\
+      \textbf{#1} & \textit{\small #2} \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
@@ -118,6 +118,22 @@
     \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & \textbf{\small #2}\\
     \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumePublication}[3]{%
+  \vspace{-2pt}\item
+  \begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & {\small #3}\\
+    \multicolumn{2}{l}{{\small\textit{#2}}}\\
+  \end{tabular*}\vspace{-7pt}%
+}
+
+\newcommand{\resumeAward}[3]{%
+  \vspace{-2pt}\item
+  \begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & {\small\textit{#2}} \\
+    \multicolumn{2}{p{\linewidth}}{{\footnotesize #3}}\\
+  \end{tabular*}\vspace{-7pt}%
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -142,7 +158,7 @@
     \href{mailto:mgray88@gatech.edu}{\faEnvelope\ mgray88@gatech.edu} ~ 
     \href{https://www.linkedin.com/in/mitchellegray/}{\faLinkedin\ MitchellEGray}  ~
     \href{https://github.com/MitchellGray100}{\faGithub\ MitchellGray100}
-    \vspace{-8pt}
+    % \vspace{-8pt}
 \end{center}
 
 
@@ -151,35 +167,35 @@
 \section{\textcolor{customred}{Education}}
   \resumeSubHeadingListStart
     \resumeSpecialSubheadingGT
-      {Georgia Tech, Atlanta, GA}{Jan 2025 – Aug 2026 (Part-Time)}
-      {Master's of Science, Computer Science}{GPA: 4.0; Artificial Intelligence}%Insert GPA here%
+      {Georgia Tech, Atlanta, GA}{GPA: 4.0}
+      {Master of Science, Computer Science}{Artificial Intelligence}%Insert GPA here%
       %leave 2 lines after this
 
 
     \resumeSpecialSubheadingCornell
-      {Cornell University, Ithaca, NY}{Aug 2020 – May 2024}
-      {Bachelor's of Science, Computer Science}{Distributed Systems}%Insert GPA here%
-      {Minor, Operations Research Information Engineering}{30 Extra Graduate-Level Credits}
+      {Cornell University, Ithaca, NY}{}
+      {Bachelor of Science, Computer Science}{Distributed Systems}%Insert GPA here%
+      {Minor, Operations Research Information Engineering}{M.Eng Equivalence}
       %leave a line after this
 
       \vspace{2pt}
-      \textbf{Knowledge Domain}: Distributed Systems $\cdot$ Systems Programming $\cdot$ AI $\cdot$ Machine Learning $\cdot$ Databases $\cdot$ Cloud
+      \textbf{Focus Areas}: Distributed Systems $\cdot$ Systems Programming $\cdot$ AI $\cdot$ Machine Learning $\cdot$ Databases $\cdot$ Cloud
       
       
     \resumeSubHeadingListEnd
-\vspace{-18pt}
+% \vspace{-18pt}
 
 %-----------Technical Skilss-----------
 \section{\textcolor{customred}{Technical Skills}}
  \begin{itemize}[leftmargin=0.1in, label={}]
     \small{\item{
-     \textbf{Languages}{: C $\cdot$ C++ $\cdot$ Python $\cdot$ PL/SQL $\cdot$ Java $\cdot$ Rust} \\
+     \textbf{Languages}{: C $\cdot$ C++ $\cdot$ Python $\cdot$ Java $\cdot$ Rust $\cdot$ PL/SQL} \\
      \textbf{Software \& Tools}{: 
-     Git $\cdot$ Pytorch $\cdot$ Scikit-learn $\cdot$ NumPy $\cdot$ Pandas $\cdot$ Poetry $\cdot$ CMake $\cdot$ CI/CD $\cdot$ Docker $\cdot$ K8s $\cdot$ Azure $\cdot$ AWS
+     Git $\cdot$ Pytorch $\cdot$ Docker $\cdot$ Kubernetes $\cdot$ Scikit-learn $\cdot$ NumPy $\cdot$ Pandas $\cdot$ Poetry $\cdot$ CMake $\cdot$ CI/CD
      }\\
     }}
  \end{itemize}
- \vspace{-20pt}
+%  \vspace{-20pt}
 
 %-----------EXPERIENCE-----------
 \section{\textcolor{customred}{Relevant Work Experience}}
@@ -188,27 +204,39 @@
       {Oracle}{Sept 2025 -- Present}
       {Software Engineer II $|$ \textbf{\emph{C, PL/SQL, Raft, Java, OracleDB, OCI}}}{Redwood City, CA}
       \resumeItemListStart
-      \resumeItem {Working on Raft Replication in the Oracle Globally Distributed Database for Shard Replication $\cdot$ 
+      \resumeItem {Developing Raft Replication infrastructure in the Oracle Globally Distributed Database used for Shard Replication $\cdot$ 
       Writing fault-tolerant and scalable Distributed Systems code in \textbf{C}, \textbf{Java}, and \textbf{PL/SQL}.}
       \resumeItem {Received \textbf{Training \& Mentorship Excellence Award} $\cdot$ Provided technical mentorship to our newest engineer.}
-      \resumeItem {Designed and implemented a generic shard-operations replication framework that consolidated multiple 
-      ad-hoc code paths into a single framework $\cdot$ Improved maintainability, scalability, and ease of creating new operations with fewer defects.}
-      \resumeItemListEnd
+      \resumeItem {Designed and implemented a generic shard-operations marker framework that consolidated multiple 
+      ad-hoc code paths into a single framework $\cdot$ Improved maintainability, scalability, and ease of creating new markers with fewer defects.}
+      \resumeItem {Architected and implemented advanced deployment algorithms when specifying server rack requirements to more evenly balance replicas across shards automatically $\cdot$
+       Improved CLI user-interface to view user-specified rack information.}
+      \resumeItem {Implemented comprehensive Pluggable DBs lifecycle management $\cdot$ Enabled seamless
+      Drop, Unplug, Plug, Clone, and Relocate operations to streamline maintenance for Raft replicas using Oracle's multi-tenant container architecture.}
+      \resumeItem{Led remediation of shard-to-shard TDE encryption defects by unifying divergent serialization paths $\cdot$ 
+      Preserved encryption metadata during replica transfer, enabling reliable decryption on receiving shards and 
+      restoring correctness for TDE-enabled shard replication workflows.}
+      \resumeItem{Improved slow-replica flow control $\cdot$ Implemented new throttling logic to stabilize replication with degraded replicas.}
+    \resumeItemListEnd
+
+    \vspace{-1pt}
 
     \resumeSubheadingPromotion
     {Software Engineer I}{June 2024 -- Sept 2025}
     \resumeItemListStart
-
     \resumeItem {Engineered a fault‑tolerant replica replication feature on Oracle Cloud Infrastructure $\cdot$ 
     Enforced placement of Raft replicas on separate server racks to eliminate single‑rack replication-unit failures and improve database availability.}
     \resumeItem {Refactored over 1,200 lines of Sharding serialization code to eliminate a critical data‑loss defect $\cdot$
      Designed robust de/serialization pipelines and multi‑format conversion logic that 
      greatly improved data integrity and system reliability.}
-    \resumeItem {Optimized multiple replica-to-replica data transfer operations $\cdot$ Achieved a \textbf{700\%} performance improvement without workload and 
-    \textbf{250\%} improvement under active workloads after optimization code changes.}
+    \resumeItem {Optimized multiple replica-to-replica data transfer operations by using batching $\cdot$ Achieved a \textbf{700\%} performance improvement offline and 
+    \textbf{250\%} improvement online after optimization code changes.}
     \resumeItem {Resolved critical recoverability issue in replica-to-replica data transfer operations by ensuring complete transfer
     of essential recovery-related tables and data between replicas $\cdot$ Improved reliability and system integrity during failure.}
+    \resumeItem {Enhanced error-handling mechanisms throughout the codebase $\cdot$ Improved error handling reliability and diagnosability.}
     \resumeItemListEnd
+
+    \vspace{4pt}
 
     \resumeSubheading
       {Gecko Robotics}
@@ -218,46 +246,61 @@
       \resumeItem { Worked on the Robot Controls team $\cdot$ Wrote code for an asynchronous distributed system in \textbf{C++}, \textbf{Python}, and \textbf{C}.} 
       \resumeItem { Revamped Robot \& DAQ emulators $\cdot$ Implemented communications protocol and Client/Server TCP networking.}
       \resumeItem { Replaced VS build-system with \textbf{CMake} $\cdot$ Added calibration support to emulators $\cdot$ Integrated \textbf{CI/CD} and \textbf{Poetry}.}
-%Based on the number of point you want to add add the "\resumeItem" for each point you want to add.
       \resumeItemListEnd
     
+    \vspace{4pt}
+
     \resumeSubheading
       {Carnegie Mellon University - Software Engineering Institute }{May 2022 -- May 2023}
       {DevOps Engineer Intern  $|$ \textbf{\emph{Python, Rust, CI/CD, Docker, Kubernetes}}}{Pittsburgh, PA}
       \resumeItemListStart
       \resumeItem {Developed \textbf{Python}, \textbf{Rust}, and \textbf{Bash} code on various NDA projects $\cdot$ Updated and created \textbf{CI/CD} pipelines $\cdot$ Created
-        GitLab \textbf{REST API} data visualizations for clients $\cdot$ Used ArgoCD and Helm to deploy AWS EKS cluster.}
-      \resumeItem {Improved efficiency of the company by using \textbf{Python}, \textbf{Neo4j}, NeoDash, Confluence Documents, and the PageRank algorithm to 
-        create scripts, metrics, and long-term documentation that are now used throughout the company.}
+        GitLab \textbf{REST API} live data visualizations for clients $\cdot$ Used ArgoCD and Helm to deploy \textbf{Kubernetes} clusters.}
+      \resumeItem {Built internal analytics tools using \textbf{Python}, \textbf{Neo4j}, NeoDash, and PageRank-based graph analysis to 
+        generate engineering metrics and documentation adopted across multiple teams within the company.}
       \resumeItemListEnd
 
   
   \resumeSubHeadingListEnd
-\vspace{-18pt}
+% \vspace{-18pt}
+
+\newpage
 
 %----------- Relevant Academic Work Experience -----------
 \section{\textcolor{customred}{Relevant Academic Work Experience}}
   \resumeSubHeadingListStart
     \resumeSubheading
-    {Contextual Computing Group}{June 2025 -- Present}
-    {Graduate Researcher $|$ \textbf{\emph{Python, Typescript}}}{Atlanta, GA}
+    {Georgia Tech Contextual Computing Group}{June 2025 -- July 2026}
+    {Graduate Researcher $|$ \textbf{\emph{AI, ML, Python, Typescript}}}{Atlanta, GA}
     \resumeItemListStart
-      \resumeItem {Paper accepted into \textbf{Learning at Scale 2026}, created a plagiarism/cheating-detection IDE.}
-      \resumeItem {Used ML models to analyze behavioral data $\cdot$ Utilizing the tool in multiple graduate-level CS courses at Georgia Tech. 
-      }
+      \resumeItem {Worked on Nosi, an IDE that combines an encrypted virtual file system and application behavior-logging 
+      $\cdot$ Utilizes \textbf{Machine Learning} techniques to analyze behavioral data and flag potentially-cheating students.}
+      \resumeItem {Published at \textbf{Learning at Scale 2026} $\cdot$ 
+      Integrated the IDE into multiple Georgia Tech graduate-level CS courses.}
+      \resumeItem {Created models that can detect the difference between human-coding and code transcription $\cdot$
+      Implemented tools to help review flagged cheating cases and replay student interactions with the IDE $\cdot$ Developed scripts
+      that automatically generate encrypted repositories for students and decrypt them for the auto-grader.}
     \resumeItemListEnd
 
     \resumeSubheading
-    {Georgia Tech \& Cornell University}{Aug 2022 -- Present}
-    {Graduate Teaching Assistant $|$ \textbf{\emph{Python, NumPy, SQL, Java}}}{Atlanta, GA \& Ithaca, NY}
+    {Georgia Tech}{May 2025 -- May 2026}
+    {Graduate Teaching Assistant $|$ \textbf{\emph{AI, Python, NumPy}}}{Atlanta, GA}
     \resumeItemListStart
-      \resumeItem {Received the \textbf{Course Staff Exceptional Service Award} $\cdot$ Taught Graduate AI, Databases, OOP, and Physics.
-      }
+      \resumeItem {Taught graduate-level \textbf{Artificial Intelligence} $\cdot$ Helped with new plagiarism-detection tooling integration.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {Cornell University}{Aug 2022 -- May 2024}
+    {Undergraduate Teaching Assistant $|$ \textbf{\emph{Python, NumPy, SQL, Java}}}{Ithaca, NY}
+    \resumeItemListStart
+      \resumeItem {Received the \textbf{Course Staff Exceptional Service Award} $\cdot$ Taught Databases, Object-Oriented Programming, and Physics 
+                    $\cdot$ Lectured 400+ students with custom-designed lecture content
+                    $\cdot$ Led Exam sessions and other TAs.}
     \resumeItemListEnd
 
     \resumeSubheading
     {Cornell Database Group}{Jan 2022 -- May 2024}
-    {Database Research Intern $|$ \textbf{\emph{Java, AWS}}}{Ithaca, NY}
+    {Undergraduate Researcher $|$ \textbf{\emph{ML, Java, AWS}}}{Ithaca, NY}
     \resumeItemListStart
       \resumeItem {Published and presented paper at \textbf{VLDB 2023} combining \textbf{Reinforcement Learning} and Worst-Case Optimal Joins.}
       \resumeItem {Worked on upgrading query engine to a \textbf{Distributed Architecture} $\cdot$ Created dynamic statistics \& RL visualizations.
@@ -265,6 +308,83 @@
     \resumeItemListEnd
 
   \resumeSubHeadingListEnd
- \vspace{-20pt}
+%  \vspace{-20pt}
+
+%----------- Publications -----------
+\section{\textcolor{customred}{Publications}}
+  \resumeSubHeadingListStart
+    \resumePublication{Learning at Scale (2026)}
+    {Nosi IDE: Securing Coding Assessment Integrity in the Age of
+     LLMs via Process-Driven Analytics}
+     {[\href{https://dl.acm.org/doi/abs/10.1145/3774398.3811574}
+     {https://dl.acm.org/doi/abs/10.1145/3774398.3811574}]} % TODO update link
+    \resumePublication{Learning at Scale (2026)}
+    {Demonstrating Nosi IDE: Securing Coding Assessment Integrity in the Age of
+     LLMs via Process-Driven Analytics}
+     {[\href{https://dl.acm.org/doi/abs/10.1145/3774398.3811574}
+     {https://dl.acm.org/doi/abs/10.1145/3774398.3811574}]} % TODO update link
+    \resumePublication{VLDB (2023)}
+    {Demonstrating ADOPT: Adaptively Optimizing Attribute Orders 
+    for Worst-Case Optimal Joins via Reinforcement Learning}
+    {[\href{https://dl.acm.org/doi/abs/10.14778/3611540.3611629}
+    {https://dl.acm.org/doi/abs/10.14778/3611540.3611629}]}
+  \resumeSubHeadingListEnd
+
+%----------- Awards -----------
+\section{\textcolor{customred}{Awards}}
+  \resumeSubHeadingListStart
+    \resumeAward{Oracle, Database Organization}
+    {Mentorship and Leadership Excellence Award}
+    {Recognizes outstanding efforts in mentorship and training of others that go above and beyond the call of duty. Multi-day, multi-recipient efforts beyond the direct organization.}
+    \resumeAward{Cornell Bowers CIS}
+    {Course Staff Exceptional Service Award}
+    {Faculty-nominated award for exceptional commitment, hard-work, dedication, and exceptional service of a Teaching Assistant during the 2023-2024 academic year.}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{\textcolor{customred}{Relevant Projects}}
+    % \vspace{-6pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\textbf{Inference Serving Platform} $|$ Personal Project $|$ \textbf{\emph{Go, Kubernetes, vLLM, Docker} $|$}
+          \emph{\href{https://github.com/MitchellGray100/InferenceServing}{Github}}}{April 2026 -- Present}
+          \resumeItemListStart
+          % TODO: placeholder
+            \resumeItem{Building a cloud-hosted inference serving platform for deploying open-source LLMs behind scalable HTTP APIs $\cdot$ Implementing request routing, model container orchestration, autoscaling, and GPU-aware scheduling on Kubernetes.}
+            \resumeItem{Integrating vLLM-based inference workers with asynchronous job queues, health checks, structured logging, and deployment metadata to support reliable model serving across multiple replicas.}
+          \resumeItemListEnd
+          \vspace{-14pt}
+    \resumeProjectHeading
+          {\textbf{Improving 3D Point-Cloud Classification} $|$ Deep Learning $|$ \textbf{\emph{AI, Python, PyTorch}}\emph{ $|$
+          \href{https://github.com/MitchellGray100/3D_Point_Cloud_Classification}{Github}}}{Aug 2025 -- Dec 2025}
+          \resumeItemListStart
+            \resumeItem{Re-implemented and upgraded state-of-the-art point 
+            cloud classification Deep Neural Networks $\cdot$ Implemented PointNet and 
+            PointPillars $\cdot$ Upgraded these models by modifying their architectures, adding Dropout, 
+            implementing Data augmentation, and introducing Residual Connections $\cdot$ Improved 
+            validation accuracy by 4\% and massively reduced overfitting.}
+          \resumeItemListEnd
+          \vspace{-14pt}
+    \resumeProjectHeading
+          {\textbf{Distributed Testing Platform (SPEED)} $|$ Masters Project $|$ \textbf{\emph{Java} $|$}
+          \emph{\href{https://github.com/MitchellGray100/SPEED}{Github} $|$ \href{https://bowers.cornell.edu/events/bits-on-our-minds-boom/projects}
+          {BOOM}}}{Aug 2023 -- May 2024}
+          \resumeItemListStart
+            \resumeItem{1 of 44 projects selected for BOOM 2024 $\cdot$ Worked on SPEED, \underline{S}calable \underline{P}latform for \underline{E}fficient \underline{E}xecution of
+            \underline{D}istributed testing, which is a fault-tolerant system that contains a controller node that orchestrates worker nodes 
+            running \textbf{JUnit} tests on \textbf{Java} code $\cdot$ Aggregated worker node findings to the controller $\cdot$ Displayed test results
+            in the frontend to the user once all tests finish.
+            }
+          \resumeItemListEnd
+          \vspace{-14pt}
+    \resumeProjectHeading
+          {\textbf{SpGEMM Parallelization on GPUs} $|$ Parallel Computing $|$ \textbf{\emph{CUDA, C++}}\emph{ $|$
+          \href{https://github.com/TTDDClasses/cs5220FinalProject}{Github}}}{Jan 2024 -- May 2024}
+          \resumeItemListStart
+            \resumeItem{Parallelized sparse-matrix multiplication operations using GPUs $\cdot$ Experimented with multiple variations of the algorithm which massively improved performance of the algorithms.}
+          \resumeItemListEnd
+          \vspace{-14pt}
+    \resumeSubHeadingListEnd
+% \vspace{-3pt}
 % adjust vscape based on the space you want to leave between each section.
 \end{document}
